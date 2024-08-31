@@ -93,7 +93,7 @@ class WebCrawler:
         # Convert to pandas df and save it to an excel file
         df = pd.DataFrame(self.page_data, columns=['Page Name', 'Page URL', 'Page Content'])
         df.to_excel(file_name, index=False)
-        print(f"Data saved to {file_name}")
+#        print(f"Data saved to {file_name}")
 
 if __name__ == "__main__":
     crawler = WebCrawler(main_url="https://www.hapoeluta.org/")
